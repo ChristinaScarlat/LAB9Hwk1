@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static <print> void main(String[] args) {
         System.out.println("1. Printati \"Hello\" in consola, iar pe rand nou, printati numele vostru.");
         System.out.println("Hello!");
         System.out.println("Christina Scarlat");

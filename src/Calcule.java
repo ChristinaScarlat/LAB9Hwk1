@@ -60,16 +60,7 @@ public class Calcule {
         return C;
         }
 
-  //  private double distance;
-     //   public double Time(double t1, double t2, double t3){
-       //     double speed1 = distance / t1;
-         //   return speed1;
-         //   double speed2 = distance / t2*60.0D;
-         //   return speed2;
-           // double speed3 = distance*1609.0D / t3;
-          //  return speed3;
 
-       // }
 
     }
 
