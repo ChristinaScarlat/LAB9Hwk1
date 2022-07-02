@@ -91,9 +91,87 @@ public class LogicalOperations {
 
         }return "Not applicable";}
 
+    public void printToHundred(int x){
+      for (int i=x;i<=100;i++){
+       System.out.println(i);
+    }}
+    public double sumAndAverage(){
+            int sum=0;
+            for (int i=1;i<=100;i++){
+                sum+=i;
+            }
+        System.out.println(sum);
+            return sum / 100d;
+    }
 
+    public double getAverageInInterval(int start, int finish){
+    int sum=0;
+    double count=0;
+
+      while(start <=finish){
+        sum=sum+start;
+        sum++;
+        count++;
+      }
+
+      return sum/count;}
+
+   public double getAverageForEvenInInterval(int start, int finish){
+            int sum = 0;
+            double count = 0;
+            while (start <= finish) {
+                if ((start % 2) == 0) {
+                    sum = sum + start;
+                    count++;
+                }
+                start++;
+            }
+            return sum / count;}
+
+    public double getAverageForOddInInterval(int start, int finish){
+        int sum = 0;
+        double count = 0;
+        while (start <= finish) {
+            if ((start % 2) != 0) {
+                sum = sum + start;
+                count++;
+            }
+            start++;
+        }
+        return sum / count;}
+
+    public void printToHundredminus(int z){
+        for (int i=z;i>-100;i--){
+            System.out.println(i);
+        }}
+    public void printaTob(int a, int b){
+        for (int i=a;i<=b;i++){
+            System.out.println(i);
+        }}
+    public void printYToX(double X, double Y){
+        if (X>Y){
+        for (double i=X;i>Y;i--){
+            System.out.println(i);
+        }}}
+
+    public void printEvenNumber(int r){
+        for (int i=r;i<100; i++){
+            if (i%2==0){
+         System.out.println(i);}
+            }}
+    public void printOddNumber(int s){
+        for (int i=s;i<100; i++){
+            if (i%2!=0){
+                System.out.println(i);}
+        }}
+    public double sum(){
+        int sum=0;
+        for (int i=1;i<=100;i++){
+            sum+=i;
+        }
+        return sum++;
     }
 
 
-
+    }
 
