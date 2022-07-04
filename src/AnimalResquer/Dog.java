@@ -1,30 +1,61 @@
 package AnimalResquer;
 
+import java.util.Scanner;
+
 public class Dog {
+    Scanner scanner = new Scanner(System.in);
 
-    int age = 10;
-    String race = "buldog";
-    String name = "Ralph";
-    String color = "gray";
-    double weight = 10.5;
-    int heightCm = 20;
+    private int age;
+    private String race;
+    private String name;
+    private String color;
+    private double weight;
+    private int heightCm;
+    public int x;
 
+   // Dog(String name, int age, String race, double weight, int heightCm) {
+    //    this.name = name;
+      //  this.age = age;
+      //  this.race = race;
+      //  this.weight = weight;
+      //  this.heightCm = heightCm;
+  //  }
 
-    public void eat(){
-        System.out.println("eating dog food");
+    public String getName() {
+        return name;
     }
-    public void sleep(){
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String snackvita;
+
+
+    public void eat() {
+        int F = 10;
+        System.out.println("Level of hunger is 1 to" + F + ":");
+        for (int i = 1; i <= F; i++) {
+            int x = scanner.nextInt();
+            System.out.println("Choose a number for how hungry is Ralph:");
+            if (x <= 5)
+                System.out.println("Ralph is eating a snack. is" + snackvita);
+            if (x <= F)
+                System.out.println("Ralph is eating dog food!");
+        }
+    }
+
+    public void sleep() {
         System.out.println("Snores...zzz");
     }
-    public void speak(){
+
+    public void speak() {
         System.out.println("Ham!");
     }
-    public void play(){
+
+    public void play() {
         System.out.println("Go fetch!");
     }
-
-
-
 
 
 }
