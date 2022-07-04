@@ -59,10 +59,106 @@ public class Calcule {
         float C= (5.0f/9.0f*(Fh-32));
         return C;
         }
-
-
+    public void printOneToHundred(int x1){
+        int i=x1;
+        System.out.println("Print numbers 1to100:");
+        while (i<=100){
+            System.out.println(i);
+            i++;
+        }
 
     }
+    public void printOneToHundredminus(int y1){
+        int i=y1;
+        System.out.println("Print numbers 1to100:");
+        while (i>=-100){
+            System.out.println(i);
+            i--;
+        }
+    }
+    public void printaTob(int a1, int b1){
+        int i=a1;
+        System.out.println("a=" + a1 +"\nb="+b1);
+         while (i<=b1){
+            System.out.println(i);
+             i++;
+        }}
+    public void printYToX(double X1, double Y1){
+       double i =X1;
+        System.out.println("X="+ X1+"\nY="+ Y1);
+         while (i>Y1){
+            System.out.println(i);
+                i--;
+            }}
+    public void printEvenNumber(int r1){
+        int i=r1;
+        System.out.println("Print Even numbers 1to100:");
+        while(i<100){
+            if (i%2==0){
+                System.out.println(i);}
+            i++;
+        }}
+    public void printOddNumber(int s1){
+        int i=s1;
+        System.out.println("Print Odd numbers 1to100:");
+        while(i<100){
+            if (i%2!=0){
+                System.out.println(i);}
+            i++;
+        }}
+    public double getAverageInInterval(int start, int finish){
+        int sum = 0;
+        double count = 0;
+
+        while(start<=finish){
+            sum = sum +start;
+            sum++;
+            count++;}
+        return sum/count;
+    }
+    public double getAverageForNumberDiv7(int n1, int nn){
+
+        int sum =0;
+        double count = 0;
+           while (n1 <=nn) {
+                  if (n1%7==0) {
+                      sum=sum+n1;
+                      count++;
+                    }}
+        return sum / count;
+        }
+
+    public void getFibonaci() {
+       int n =20;
+        int n0 = 0;
+        int n1 = 1;
+        int i=1;
+        while (i<=n) {
+            System.out.println(n0 + "");
+            int n2 = n0 + n1;
+            n0 = n1;
+            n1 = n2;
+            i++;
+        }
+    }
+    public void CozaLozaWoza() {
+        for (int x = 1; x <= 110; x +=1) {
+            if (x % 3 == 0) {
+                System.out.print("Coza");
+            }else if (x % 5 == 0) {
+                System.out.print("Loza");
+            }else if (x % 7 == 0) {
+                System.out.print("Woza");
+            }else if (x % 3 != 0 && x % 5 != 0 && x % 7 != 0) {
+                System.out.print(" " + x);
+            }
+            if (x % 11 == 0) {
+}}}
+
+}
+
+
+
 
 
 

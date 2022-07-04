@@ -105,16 +105,14 @@ public class LogicalOperations {
     }
 
     public double getAverageInInterval(int start, int finish){
-    int sum=0;
-    double count=0;
-
-      while(start <=finish){
-        sum=sum+start;
-        sum++;
-        count++;
-      }
-
-      return sum/count;}
+    int sum = 0;
+    double count = 0;
+      while(start<=finish){
+        sum = sum +start;
+          sum++;
+          count++;}
+            return sum/count;
+    }
 
    public double getAverageForEvenInInterval(int start, int finish){
             int sum = 0;
