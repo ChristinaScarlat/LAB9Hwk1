@@ -169,57 +169,76 @@ public class LogicalOperations {
         }
         return sum++;
     }
-   // public void printStars(){
-     //   String star = "*";
-     //   for(int j; j<=7; j++){
-     //   for(int i=7-j; i>=1; i--){
-     //       System.out.print(star);
-     //   }
-      //      System.out.println();
-   // }}
+   public void printStars(){
+        String star = "*";
+       for(int i2 = 0; i2<=7; i2++){
+           for(int i=7-i2; i2>=1; i--){
+                 System.out.print(star);
+                 }
+                 System.out.println();
+               }}
 
-public int[] populateArrayUpToNumber(int number){
-        int[]array=new int[number];
+               public int[] populateArrayUpToNumber(int number){
+                   int[]array=new int[number];
 
-        for(int i=0; i<array.length; i++){
-            array[i]=i+1;
-        }
-        return array;
-}
-public void printArray(int[] array){
-        for (int i=0;i< array.length; i++){
-            System.out.println(array[i]+ " ");
-        }
-}
-public double getAverageFromArray(int[]array){
-       double sum=0;
-       for (int i=0; i < array.length; i++) {
-           sum += array[i];
+                   for(int i=0; i<array.length; i++){
+                       array[i]=i+1;
+                   }
+                   return array;
+               }
+               public void printArray(int[] array){
+                   for (int i=0;i< array.length; i++){
+                       System.out.println(array[i]+ " ");
+                   }
+               }
+               public double getAverageFromArray(int[]array){
+                   double sum=0;
+                   for (int i=0; i < array.length; i++) {
+                       sum += array[i];
+                   }
+                   return sum / array.length;
+               }
+               public boolean isValueinArray(String[]array, String value) {
+                   for (int i = 0; i < array.length; i++) {
+                       if (array[i].equals(value)) {
+                           return true;
+                       }
+                   }
+                   return false;
+               }
+
+
+   public int[] populateArrayUpToEvenNumber(int number){
+       int[]array2=new int[number];
+       for (int i=0;i<array2.length; i++){
+             if (array2[i] % 2 == 0){
+                 return new int[]{array2[i] = i + 1};
+                }}
+        return array2;
+    }
+   public void printEvenArray(int[]array2){
+      for (int i=0;i<array2.length; i++){
+         System.out.println(array2[i] + " ");
        }
-    return sum / array.length;
+   }
+
+    public double getAverageArray(int[]array3){
+        double sum=0;
+        for (int i=0; i < array3.length; i++) {
+            sum += array3[i];
         }
- public boolean isValueinArray(String[]array, String value) {
-     for (int i = 0; i < array.length; i++) {
-         if (array[i].equals(value)) {
-             return true;
-         }
-     }
-     return false;
- }
+        return sum / array3.length;
+    }
+
+    public double ValueinArray(int[]array4,int value) {
+        for (int i = 0; i < array4.length; i++) {
+            if (array4[i]==(value)) {
+                return i++;
+            }
+        } return value;
+    }
 
 
 
 
-
-
-
-
-
-
-
-
-
-}
-
-
-
+    }
