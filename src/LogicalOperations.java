@@ -343,17 +343,33 @@ public void printNumbersBackwardsFromList(List<Integer>myList){
 
         }
     }
-    public int printUnorderedListOrdered(List<Integer> unorderedList){
-        for (int i = 0; i<unorderedList.size(); i++){
-            for(int j = i+1; j <unorderedList.size(); j++){
-              if(unorderedList.get(i)>unorderedList.get(j)){
-                System.out.println("P"+i+"V"+unorderedList.get(j));
-              }
 
+    /*
+    *      List<Integer> unorderedList = new ArrayList<>();
+        unorderedList.add(13);
+        unorderedList.add(11);
+        unorderedList.add(123);
+        unorderedList.add(12);
+        unorderedList.add(111);
+        unorderedList.add(122);
+        * */
+
+    public void printUnorderedListOrdered(List<Integer> unorderedList) {
+        for (int i = 0; i < unorderedList.size(); i++) {
+            for (int j = i + 1; j < unorderedList.size(); j++) {
+                if (unorderedList.get(i) > unorderedList.get(j)) {
+                    int x = unorderedList.get(i);
+                    unorderedList.set(i, unorderedList.get(j));
+                    unorderedList.set(j, x);
+                }
             }
+        }
+        for (Integer list:unorderedList){
 
-        }return 0;
-    }
+        System.out.println(list);
+     }
+}
+
 
 
 }
