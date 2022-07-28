@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LogicalOperations {
 
 
@@ -208,37 +210,150 @@ public class LogicalOperations {
                }
 
 
-   public int[] populateArrayUpToEvenNumber(int number){
-       int[]array2=new int[number];
-       for (int i=0;i<array2.length; i++){
-             if (array2[i] % 2 == 0){
-                 return new int[]{array2[i] = i + 1};
+   public int[] populateArrayUpToEvenNumber(int[]array2){
+       int j=0;
+
+       for (int i=1;i<100; i++){
+             if (i % 2 == 0){
+                 array2[j] = i;
+                 j++;
                 }}
         return array2;
     }
-   public void printEvenArray(int[]array2){
-      for (int i=0;i<array2.length; i++){
-         System.out.println(array2[i] + " ");
-       }
-   }
 
     public double getAverageArray(int[]array3){
         double sum=0;
         for (int i=0; i < array3.length; i++) {
             sum += array3[i];
         }
-        return sum / array3.length;
+        return (sum / array3.length);
     }
 
     public double ValueinArray(int[]array4,int value) {
         for (int i = 0; i < array4.length; i++) {
             if (array4[i]==(value)) {
-                return i++;
+                return i;
             }
         } return value;
     }
 
+    public void drawLines() {
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(line);
+        }
+    }
+
+    public int[] removeNrFromArray(int[] myArray, int nr) {
+        int[] secondArray = new int[myArray.length];
+        int j = 0;
+
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] == nr)
+                continue;
+            secondArray[j++] = myArray[i];
+        }
+        int[] finArray = new int[j];
+        for (int i = 0; i < j; i++)
+            finArray[i] = secondArray[i];
+        return finArray;
+    }
+
+    public int getSecondSmallestNrInArray(int[] myArray) {
+        int temporary = 0;
+        for(int i = 0; i< myArray.length;i++){
+            for(int j = i + 1;j<myArray.length;j++){
+                if(myArray[i] > myArray[j]){
+                    temporary = myArray[j];
+                    myArray[j] = myArray[i];
+                    myArray[i] = temporary;
+                }
+            }
+        }
+        return myArray[1];
+    }
+
+    public int[] copyArray(int[] firstArray, int[] emptyArray) {
+        for (int i = 0, j = 0; i < firstArray.length; i++) {
+            emptyArray[j] = firstArray[i];
+            j++;
+        }
+       return emptyArray;
+    }
+
+public void printNumbersBackwardsFromList(List<Integer>myList){
+        for (int i = myList.size()-1; i>=0; i--){
+            System.out.println(myList.get(i));
+        }}
+
+  public void addToEndOfList(List<Integer>list, int a){
+      list.add(a);
+   }
 
 
+    public int getHighestNumber (List<Integer> list){
+        int max = list.get(0);
+        for (int x:list){
+            if (x>max){
+                max = x;
+            }
+        }
+        return max;
 
     }
+
+//Tema Lab6
+
+    public void printList1(List<Integer>myList1){
+        for (int i = 0; i<myList1.size(); i++){
+            System.out.println(myList1.get(i));
+        }
+    }
+    public void addNumberToList(List<Integer>myList, int number){
+            myList.add(number);
+    }
+
+    public void printListByIndex(List<Integer> myList, int position){
+        for (int i = position;i < myList.size(); i++){
+            System.out.println(myList.get(i));
+        }
+    }
+    public void addStringParameterAndPoz(List<String>myListOfStrings, int poz, String text){
+        myListOfStrings.add(poz,text);
+        System.out.println(myListOfStrings);
+        }
+
+        public void addNumbertoFirstPosition(List<Integer>myList1, int nr){
+        myList1.add(0,nr);
+            System.out.println(myList1);
+        }
+
+        public void printListPositionsAndValues(List<Integer>myList1){
+            for (int i = 0; i<myList1.size(); i++){
+            System.out.println("Position"+i+"Value"+myList1.get(i));}
+        }
+
+    public void printListEvenValues(List<Integer>myList1){
+        for (int i = 0; i<myList1.size(); i++){
+            if (i%2==0){
+                System.out.println(myList1.get(i));
+            }
+
+
+        }
+    }
+    public int printUnorderedListOrdered(List<Integer> unorderedList){
+        for (int i = 0; i<unorderedList.size(); i++){
+            for(int j = i+1; j <unorderedList.size(); j++){
+              if(unorderedList.get(i)>unorderedList.get(j)){
+                System.out.println("P"+i+"V"+unorderedList.get(j));
+              }
+
+            }
+
+        }return 0;
+    }
+
+
+}

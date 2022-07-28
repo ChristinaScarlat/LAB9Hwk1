@@ -1,36 +1,42 @@
-package AnimalResquer;
+package AnimalResquer.Animals;
 
+import java.awt.*;
 import java.util.Scanner;
+
 
 public class Animal {
     Scanner scanner = new Scanner(System.in);
 
     private int age;
     private String race;
-    private String name;
-    private String color;
+    String name;
+    public String color;
     private double weight;
     private int heightCm;
 
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-
-    public String snackvita;
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge() {
         this.age = age;
+
     }
 
-    public String getRace() {
+    public String getRace(String siamese) {
         return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
     }
 
     public String getColor() {
@@ -57,38 +63,32 @@ public class Animal {
         this.heightCm = heightCm;
     }
 
-    public String getSnackvita() {
-        return snackvita;
-    }
-
-    public void setSnackvita(String snackvita) {
-        this.snackvita = snackvita;
-    }
-
-    public int x;
 
     public void eat() {
         int F = 10;
+        System.out.println("Choose a number for how hungry is :" + name);
         System.out.println("Level of hunger is 1 to" + F + ":");
-        for (int i = 1; i <= F; i++) {
-            int x = scanner.nextInt();
-            System.out.println("Choose a number for how hungry is Ralph:");
-            if (x <= 5)
-                System.out.println(name + " is eating a snack. is" + snackvita);
-            if (x <= F)
-                System.out.println(name + " is eating real food!");
-        }
-    }
+        int x = scanner.nextInt();
+
+        if (x <= 5)
+            System.out.println(name + " is eating a snack.");
+        else if (x <= F)
+            System.out.println(name + " is eating real food!");
+
+}
 
     public void sleep() {
-        System.out.println("Snores...zzz");
+        System.out.println(name + " Snores...zzz");
     }
 
     public void speak() {
-        System.out.println("Hey!");
+        System.out.println(name + ":Ham Ham!");
     }
 
     public void play() {
-        System.out.println("Go play!");
+        System.out.println("Go play!"+ name);
     }
+
+
+
 }

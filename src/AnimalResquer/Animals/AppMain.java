@@ -1,6 +1,9 @@
-package AnimalResquer;
+package AnimalResquer.Animals;
 
-import Dog.Dog;
+import AnimalResquer.Animals.Dog.Dog;
+
+import java.awt.*;
+
 
 public class AppMain {
 
@@ -16,6 +19,11 @@ public class AppMain {
        Dog rex = new Dog();
        rex.setName("Rex");
        rex.speak();
+       rex.setAge();
+       rex.getAge();
+       rex.getHeightCm();
+       rex.waveTail();
+
 
         Dog grivey = new Dog();
        grivey.setName("Grivey");
@@ -27,9 +35,18 @@ public class AppMain {
 
         Cat kitty = new Cat();
         kitty.setName("Kitty");
-        kitty.getRace();
-
+        kitty.setRace("Siamese!");
+        kitty.setColor("is black");
+        kitty.eat();
         kitty.sleep();
+        kitty.speak();
+
+        Siamese Selina = new Siamese();
+        Selina.setName("Selina");
+        Selina.play();
+        Selina.speak();
+        Selina.getRace("Siamese");
+
 
     }
 }

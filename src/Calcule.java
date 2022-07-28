@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Calcule {
 
     public int sum(int first, int second){
@@ -154,6 +156,25 @@ public class Calcule {
             }
             if (x % 11 == 0) {
 }}}
+    public int sum6(int parameterVariable, int b) {
+        return parameterVariable + b;
+    }
+    public int sum6(int parameterVariable, int b, int c) {
+        return parameterVariable + b + c;
+    }
+
+    public double sum6(List<Integer> list){
+
+        return 0;
+    }
+
+    public double substract(double x, double y) {
+        return x - y;
+    }
+
+
+
+
 
 }
 
