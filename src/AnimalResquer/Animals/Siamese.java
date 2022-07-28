@@ -6,4 +6,5 @@ public class Siamese extends Cat{
     }
 
 
+
 }

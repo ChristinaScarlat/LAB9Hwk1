@@ -11,6 +11,7 @@ package AnimalResquer.Animals;
             System.out.println("Miau!");
         }
 
+
         @Override
         public void play() {
             System.out.println(name +" plays with a mouse!");

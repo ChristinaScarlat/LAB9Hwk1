@@ -5,7 +5,7 @@ import AnimalResquer.Animals.Animal;
 
 public class Dog extends Animal {
 
-    private int age;
+    public int age;
 
     public void waveTail() {
         System.out.println(getName() + " is waving the tail");
