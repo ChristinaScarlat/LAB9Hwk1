@@ -2,7 +2,7 @@ package AnimalResquer.Animals;
 
 public class Duck extends Animal{
     public void eat() {
-        System.out.println("eating corn");
+        System.out.println(name + " eating corn");
     }
 
     public void speak(){

@@ -32,6 +32,7 @@ public class AppMain {
         Duck ducky = new Duck();
         ducky.setName("Ducky");
         ducky.play();
+        ducky.eat();
 
         Cat kitty = new Cat();
         kitty.setName("Kitty");
