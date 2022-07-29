@@ -369,7 +369,10 @@ public void printNumbersBackwardsFromList(List<Integer>myList){
         System.out.println(list);
      }
 }
-
+    public void switchTowNumbersToList(List<Integer>unorderedList){
+        unorderedList.set(1, unorderedList.set(3,unorderedList.get(1)));
+               System.out.println(unorderedList);
+    }
 
 
 }

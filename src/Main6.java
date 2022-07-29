@@ -110,6 +110,7 @@ public class Main6 {
 //
 //1.Scrieti o metoda Java care sa schimbe pozitia a doua elemente
 // intr-o Lista,
+        op.switchTowNumbersToList(unorderedList);
 
 
 //2.Scrieti o metoda Java care sa primeasca o Lista si sa returneze
