@@ -2,12 +2,10 @@ package AnimalResquer.Animals;
 
 import AnimalResquer.Animals.Dog.Dog;
 
-import java.awt.*;
-
 
 public class AppMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Dog ralph = new Dog();
         System.out.println(ralph.getName());
         ralph.setName("Ralph");
@@ -16,17 +14,17 @@ public class AppMain {
         ralph.speak();
         ralph.sleep();
 
-       Dog rex = new Dog();
-       rex.setName("Rex");
-       rex.speak();
-       rex.setAge();
-       rex.getAge();
-       rex.getHeightCm();
-       rex.waveTail();
+        Dog rex = new Dog();
+        rex.setName("Rex");
+        rex.speak();
+        rex.setAge();
+        rex.getAge();
+        rex.getHeightCm();
+        rex.waveTail();
 
 
         Dog grivey = new Dog();
-       grivey.setName("Grivey");
+        grivey.setName("Grivey");
         grivey.eat();
 
         Duck ducky = new Duck();

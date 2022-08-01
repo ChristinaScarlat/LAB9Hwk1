@@ -48,7 +48,7 @@ public class Dog extends Animal {
 
     @Override
     public void play() {
-        System.out.println("Go fetch!");
+        System.out.println("Go fetch! " +name );
 
     }
 }
