@@ -5,10 +5,19 @@ public class Duck extends Animal{
         System.out.println(name + " eating corn");
     }
 
+    @Override
+    public void sleep() {
+
+    }
+
     public void speak(){
         System.out.println("Quack quack");
     }
 
+    @Override
+    public void play() {
+
+    }
 
 
 }

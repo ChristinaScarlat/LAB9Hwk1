@@ -4,12 +4,12 @@ import java.awt.*;
 import java.util.Scanner;
 
 
-public class Animal {
-    Scanner scanner = new Scanner(System.in);
+public abstract class Animal {
+    protected Scanner scanner = new Scanner(System.in);
 
     private int age;
     private String race;
-    String name;
+    protected String name;
     public String color;
     private double weight;
     private int heightCm;
@@ -64,32 +64,13 @@ public class Animal {
     }
 
 
-    public void eat() {
-        int F = 10;
-        System.out.println("Choose a number for how hungry is :" + name);
-        System.out.println("Level of hunger is 1 to" + F + ":");
-        int x = scanner.nextInt();
+    public abstract void eat();
 
-        if (x <= 5)
-            System.out.println(name + " is eating a snack.");
-        else if (x <= F)
-            System.out.println(name + " is eating real food!");
+    public abstract void sleep();
 
-}
+    public abstract void speak();
 
-    public void sleep() {
-        System.out.println(name + " Snores...zzz");
-    }
-
-    public void speak() {
-        System.out.println(name + ":Ham Ham!");
-    }
-
-    public void play() {
-        System.out.println("Go play!"+ name);
-    }
-
-
+    public abstract void play();
 
 
 }

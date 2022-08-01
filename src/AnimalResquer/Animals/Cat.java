@@ -3,17 +3,23 @@ package AnimalResquer.Animals;
 
     public class Cat extends Animal {
         private String race;
-        // public void eat() {
-        //    System.out.println(name + " is eating Purrina");
-   // }
 
-        public void speak(){
+        public void eat() {
+            System.out.println(name + " is eating Purrina");
+        }
+
+        @Override
+        public void sleep() {
+
+        }
+
+        public void speak() {
             System.out.println("Miau!");
         }
 
 
         @Override
         public void play() {
-            System.out.println(name +" plays with a mouse!");
+            System.out.println(name + " plays with a mouse!");
         }
     }
