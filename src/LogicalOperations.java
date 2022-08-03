@@ -1,4 +1,8 @@
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
+
+import static java.lang.System.*;
 
 public class LogicalOperations {
 
@@ -375,4 +379,35 @@ public void printNumbersBackwardsFromList(List<Integer>myList){
     }
 
 
+
+    //
+//        5. In clasa LogicalOp, creati o metoda care sa primeasca
+//        un array de numere ca si parametru, si un numar. Fara
+//        a folosi conditii, si folosind un try-catch, afisati valoarea
+//        de pe pozitia numarului primit, iar daca valoarea numarului
+//        este mai mare decat numarul de pozitii din array, afisati
+//        textul: "Inside catch, number too large".
+
+
+    public void ValueArrayTry(int[]array11,int value) {
+    try{
+
+            if (array11[value]==(value));
+   }
+    catch (IndexOutOfBoundsException exception){
+        err.println("Inside catch, number too large!");
+
+            }
+        }
+        public void Wait(){
+
+        try {
+            Thread.sleep(5000);
+        } catch (Exception e) {
+            out.println("It's been 5 sec!");
+        }
+
+    }
 }
+
+
